@@ -1,0 +1,17 @@
+.u-center-container {
+  max-width: 110rem;
+  margin: 0 auto;
+  padding-bottom: 17rem;
+
+  &--hero {
+    max-width: 70rem;
+  }
+
+  &--features {
+    max-width: 83rem;
+  }
+}
+
+.u-ta-center {
+  text-align: center;
+}

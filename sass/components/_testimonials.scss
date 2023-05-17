@@ -1,0 +1,39 @@
+.testimonials {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(34rem, 1fr));
+  gap: 4rem;
+}
+
+.testimonial {
+  background-color: $testimonials-bkg;
+  padding: 4rem 2.8rem;
+  border-radius: 1rem;
+
+  &__text {
+    line-height: 1.6;
+  }
+}
+
+.testimonial-user-box {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-top: 2.8rem;
+  letter-spacing: 0.5px;
+
+  &__image {
+    width: 2.8rem;
+    border-radius: 100%;
+  }
+
+  &__name {
+    font-size: 1.2rem;
+    font-weight: 700;
+
+    margin-bottom: 0.2rem;
+  }
+
+  &__occupation {
+    font-size: 1rem;
+  }
+}

@@ -1,0 +1,22 @@
+.btn {
+  &:link,
+  &:visited {
+    display: inline-block;
+
+    font-size: 1.3rem;
+    font-weight: 700;
+    color: $white;
+
+    padding: 1.4rem 7rem;
+    border-radius: 5rem;
+    background-image: linear-gradient(
+      to right,
+      $cta-gradient-cyan,
+      $cta-gradient-blue
+    );
+  }
+
+  &:hover,
+  &:active {
+  }
+}

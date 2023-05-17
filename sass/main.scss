@@ -1,3 +1,16 @@
-@import 'base';
-@import 'typography';
-@import 'variables';
+@import 'https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Raleway:wght@400;700&display=swap';
+
+@import 'abstracts/variables';
+
+@import 'base/typography';
+@import 'base/base';
+@import 'base/utilities';
+
+@import 'components/hero';
+@import 'components/how-it-works';
+@import 'components/button';
+@import 'components/features';
+@import 'components/testimonials';
+
+@import 'layouts/header';
+@import 'layouts/footer';
