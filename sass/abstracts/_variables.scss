@@ -14,3 +14,11 @@ $white: hsl(0, 0%, 100%);
 
 $font-heading-cta-headernav: 'Raleway', sans-serif;
 $font-body: 'Open Sans', sans-serif;
+
+// animation
+
+$transition: (
+  easing: ease-out,
+  speed-slow: 250ms,
+  speed-fast: 125ms,
+);

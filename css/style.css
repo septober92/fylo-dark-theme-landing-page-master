@@ -68,7 +68,7 @@ body {
 }
 
 .hero {
-  background: url(../../images/bg-curvy-desktop.svg) no-repeat bottom;
+  background: url(../../images/bg-curvy-desktop.svg) bottom no-repeat;
   background-color: hsl(217, 28%, 15%);
   padding-top: 9rem;
 }
@@ -172,6 +172,14 @@ body {
   background-color: hsl(219, 30%, 18%);
   padding: 4rem 2.8rem;
   border-radius: 1rem;
+  position: relative;
+}
+.testimonial:first-child::before {
+  content: url(../../images/bg-quotes.png);
+  top: -15%;
+  left: -3%;
+  position: absolute;
+  z-index: -1;
 }
 .testimonial__text {
   line-height: 1.6;
@@ -204,9 +212,9 @@ body {
   padding: 5rem 5.5rem 4rem;
   border-radius: 0.8rem;
   position: absolute;
-  bottom: 79%;
-  right: 50%;
-  transform: translatex(50%);
+  top: -29%;
+  left: 50%;
+  transform: translatex(-50%);
 }
 .early-access__text {
   margin: 2.5rem 0 3.5rem;
@@ -269,18 +277,19 @@ body {
 
 .footer {
   background-color: hsl(216, 53%, 9%);
-  padding: 20rem 10rem 9.5rem;
+  padding-top: 20rem;
   position: relative;
 }
 
 .footer-logo {
-  margin-bottom: 3.5rem;
+  padding: 0 0 3.5rem 10rem;
 }
 
 .footer-4-cols-wrapper {
   display: grid;
   grid-template-columns: 1.8fr 1fr 0.5fr 0.5fr 1fr;
   gap: 7rem;
+  padding: 0 10rem 9.5rem;
 }
 
 .col-address {
@@ -347,7 +356,20 @@ body {
 }
 
 .attribution {
-  display: flex;
+  width: 100%;
+  padding: 0.5rem 0;
+  background-color: hsl(219, 30%, 18%);
+  font-size: 1.6rem;
+  font-family: "Raleway", sans-serif;
+  text-align: center;
+}
+.attribution a:link, .attribution a:active {
+  color: hsl(0, 0%, 100%);
+  font-weight: 700;
+  transition: all ease-in-out 0.3s;
+}
+.attribution a:hover, .attribution a:visited {
+  color: hsl(176, 68%, 64%);
 }
 
 /*# sourceMappingURL=style.css.map */

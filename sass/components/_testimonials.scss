@@ -9,6 +9,17 @@
   background-color: $testimonials-bkg;
   padding: 4rem 2.8rem;
   border-radius: 1rem;
+  position: relative;
+
+  &:first-child::before {
+    content: url(../../images/bg-quotes.png);
+    top: -15%;
+    left: -3%;
+
+    position: absolute;
+    z-index: -1;
+    // overflow: hidden;
+  }
 
   &__text {
     line-height: 1.6;
