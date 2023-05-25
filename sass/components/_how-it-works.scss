@@ -20,36 +20,22 @@
   &__link {
     &:link,
     &:active {
+      max-width: max-content;
       position: relative;
       display: flex;
-      gap: 1rem;
       align-items: center;
+      gap: 1rem;
+      border-bottom: solid 1px $cta-gradient-cyan;
+      padding-bottom: 0.5rem;
 
       color: $cta-gradient-cyan;
 
       transition: all ease-in-out 0.3s;
     }
 
-    &::after {
-      content: '';
-      display: inline-block;
-      position: absolute;
-      bottom: -0.5rem;
-      height: 1px;
-      width: 30.5%;
-      background-color: $cta-gradient-cyan;
-
-      // transition: all ease-in-out 0.3s;
-    }
-
     &:hover,
     &:visited {
       color: $white;
-    }
-
-    &:hover::after {
-      background-color: $white;
-      transition: all ease-in-out 0.3s;
     }
 
     &:hover,
