@@ -229,6 +229,7 @@ body {
 
 #email-early-access {
   border: none;
+  background-color: hsl(0, 0%, 100%);
   width: 68%;
   padding: 1.3rem 3rem;
   border-radius: 5rem;
@@ -240,6 +241,16 @@ body {
 }
 #email-early-access:focus {
   outline: none;
+}
+
+#error-msg {
+  display: none;
+  padding: 1rem 0 0 3rem;
+  text-align: left;
+  font-size: 1rem;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+  color: hsl(0, 100%, 63%);
 }
 
 .header {

@@ -223,15 +223,21 @@
           be happy to help you.
         </p>
 
-        <form action="#" class="early-access__cta-form">
-          <input
-            type="email"
-            id="email-early-access"
-            placeholder="email@example.com"
-          />
+        <div class="email-container">
+          <form action="#" class="early-access__cta-form" novalidate>
+            <input
+              type="email"
+              id="email-early-access"
+              oninput="checker()"
+              placeholder="email@example.com"
+            />
 
-          <button class="btn btn--early-access">Get Started For Free</button>
-        </form>
+            <button type="submit" class="btn btn--early-access">
+              Get Started For Free
+            </button>
+          </form>
+        </div>
+        <p id="error-msg">Please provide a valid email address</p>
       </div>
 
       <div class="logo-box">
@@ -308,5 +314,7 @@
         >. Coded by <a href="#">Anton Kuzmin</a>.
       </p>
     </footer>
+
+    <script src="script.js"></script>
   </body>
 </html>

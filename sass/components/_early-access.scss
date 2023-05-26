@@ -23,8 +23,8 @@
 }
 
 #email-early-access {
-  // display: block;
   border: none;
+  background-color: $white;
   width: 68%;
   padding: 1.3rem 3rem;
   border-radius: 5rem;
@@ -38,4 +38,14 @@
   &:focus {
     outline: none;
   }
+}
+
+#error-msg {
+  display: none;
+  padding: 1rem 0 0 3rem;
+  text-align: left;
+  font-size: 1rem;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+  color: $error;
 }
